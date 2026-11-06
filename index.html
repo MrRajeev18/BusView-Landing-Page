@@ -1,0 +1,1621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BusView — Smart School Transportation Platform | Seniorbit OPC Private Limited</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="BusView — Smart School Transportation Platform | Live Bus Tracking" />
+  <meta name="description" content="BusView connects schools, parents, and drivers with live school bus tracking, accurate arrival estimates, and centralized transportation management. A technology initiative by Seniorbit OPC Private Limited." />
+  <meta name="keywords" content="BusView, school bus tracking, live school bus tracker, school transportation management, Seniorbit OPC Private Limited, parent bus app, school transport software, school bus ETA" />
+  <meta name="author" content="Seniorbit OPC Private Limited" />
+  <meta name="theme-color" content="#1264E8" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BusView — Smart School Transportation Platform" />
+  <meta property="og:description" content="Every School Journey, Within Your View. Live school bus tracking and arrival updates for schools and parents." />
+  <meta property="og:image" content="/assets/busview-logo.svg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BusView — Smart School Transportation Platform" />
+  <meta name="twitter:description" content="Connect schools, parents, and drivers with live bus tracking and arrival updates." />
+
+  <!-- Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon / Icon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/busview-icon.svg" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/src/style.css" />
+
+  <!-- Structured Data: Organization & SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://busview.in/#organization",
+        "name": "Seniorbit OPC Private Limited",
+        "url": "https://busview.in",
+        "logo": "https://busview.in/assets/busview-logo.svg",
+        "description": "Technology company building practical digital solutions for everyday challenges in school transportation."
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "BusView",
+        "operatingSystem": "Web, iOS, Android",
+        "applicationCategory": "EducationalApplication, TransportationApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR",
+          "description": "Free School Pilot Programme"
+        },
+        "creator": {
+          "@id": "https://busview.in/#organization"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SECTION 1: NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Left: BusView Logo -->
+      <a href="/" class="brand-link" aria-label="BusView Homepage">
+        <img src="/assets/busview-logo.svg" alt="BusView Logo" class="brand-logo-img" />
+      </a>
+
+      <!-- Middle: Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="/" class="active">Home</a></li>
+          <li class="nav-item"><a href="/for-schools.html">For Schools</a></li>
+          <li class="nav-item"><a href="/for-parents.html">For Parents</a></li>
+          <li class="nav-item"><a href="/features.html">Features</a></li>
+          <li class="nav-item"><a href="/how-it-works.html">How It Works</a></li>
+          <li class="nav-item"><a href="/about.html">About Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Action CTAs -->
+      <div class="nav-actions">
+        <a href="#enquiry-section" class="btn btn-secondary btn-sm">Contact Us</a>
+        <button class="btn btn-primary btn-sm" data-open-modal="enquiry" data-interest="Product Demonstration">
+          Request a Demo
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer">
+      <a href="/">Home</a>
+      <a href="/for-schools.html">For Schools</a>
+      <a href="/for-parents.html">For Parents</a>
+      <a href="/features.html">Features</a>
+      <a href="/how-it-works.html">How It Works</a>
+      <a href="/about.html">About Us</a>
+      <a href="#pilot-section" class="btn btn-teal btn-sm" style="margin-top: 10px;">Join Free Pilot</a>
+      <button class="btn btn-primary" data-open-modal="enquiry" data-interest="Product Demonstration">
+        Request a Demo
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 2: HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left: Hero Headline & Copy -->
+          <div class="hero-content">
+            <div>
+              <span class="eyebrow">
+                <span class="pulsing-dot"></span>
+                SMART SCHOOL TRANSPORTATION PLATFORM
+              </span>
+              <h1 class="heading-xl">
+                Every School Journey, <br/>
+                <span style="color: var(--color-primary);">Within Your View.</span>
+              </h1>
+            </div>
+
+            <p class="body-lg">
+              BusView brings schools and parents closer to school transportation through live bus tracking, arrival updates, and a connected transportation experience.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn btn-primary btn-lg" data-open-modal="enquiry" data-interest="Product Demonstration">
+                Request a Demo
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </button>
+              
+              <a href="#solution-section" class="btn btn-secondary btn-lg">
+                Explore BusView
+              </a>
+            </div>
+
+            <!-- Trust & Transparency Bar -->
+            <div class="hero-trust-bar">
+              <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <div>
+                  <div class="trust-text">Institutional Grade</div>
+                  <div class="trust-sub">Built specifically for school fleets</div>
+                </div>
+              </div>
+
+              <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                <div>
+                  <div class="trust-text">Real-Time Telematics</div>
+                  <div class="trust-sub">Instant bus location updates</div>
+                </div>
+              </div>
+
+              <div class="trust-item">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <div>
+                  <div class="trust-text">Seniorbit Backed</div>
+                  <div class="trust-sub">Enterprise engineering discipline</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Hero Visual Showcase (Realistic Bus & Live Tracking Simulator) -->
+          <div class="hero-visual-wrapper">
+            <div class="hero-visual-card">
+              <!-- Live Telemetry Status Header -->
+              <div class="hero-live-badge">
+                <span class="pulsing-dot"></span>
+                <span>BUS 04 • LIVE TRACKING</span>
+              </div>
+
+              <!-- Interactive Simulated Map Canvas -->
+              <div class="hero-map-mockup">
+                <svg class="map-svg-canvas" viewBox="0 0 520 360" fill="none">
+                  <!-- Vector Map Background & Roads -->
+                  <rect width="520" height="360" fill="#E8EEF5"/>
+                  
+                  <!-- Parks & Neighborhoods -->
+                  <path d="M 30 30 Q 80 15 150 40 L 130 110 Q 70 100 30 70 Z" fill="#DCFCE7"/>
+                  <text x="65" y="70" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#15803D">Northfield Park</text>
+
+                  <path d="M 360 220 Q 420 200 480 230 L 470 320 Q 400 330 350 290 Z" fill="#DCFCE7"/>
+                  <text x="390" y="270" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#15803D">Green Valley</text>
+
+                  <!-- Residential Streets -->
+                  <path d="M 0 100 L 520 100" stroke="#CBD5E1" stroke-width="6"/>
+                  <path d="M 0 240 L 520 240" stroke="#CBD5E1" stroke-width="6"/>
+                  <path d="M 110 0 L 110 360" stroke="#CBD5E1" stroke-width="6"/>
+                  <path d="M 270 0 L 270 360" stroke="#CBD5E1" stroke-width="6"/>
+                  <path d="M 410 0 L 410 360" stroke="#CBD5E1" stroke-width="6"/>
+
+                  <!-- Active Bus Route Polyline -->
+                  <path d="M 70 180 Q 140 150 220 175 T 370 160 L 440 190" stroke="#1264E8" stroke-width="5" stroke-linecap="round" stroke-dasharray="6 4"/>
+
+                  <!-- Stops -->
+                  <circle cx="70" cy="180" r="6" fill="#1264E8" stroke="#FFFFFF" stroke-width="2"/>
+                  <circle cx="140" cy="150" r="6" fill="#1264E8" stroke="#FFFFFF" stroke-width="2"/>
+                  <circle cx="220" cy="175" r="6" fill="#1264E8" stroke="#FFFFFF" stroke-width="2"/>
+                  <circle cx="290" cy="130" r="8" fill="#12CBA5" stroke="#FFFFFF" stroke-width="2"/>
+                  <circle cx="370" cy="160" r="6" fill="#1264E8" stroke="#FFFFFF" stroke-width="2"/>
+
+                  <!-- Destination School -->
+                  <g transform="translate(425, 170)">
+                    <circle cx="15" cy="15" r="16" fill="#101D35" stroke="#FFFFFF" stroke-width="2"/>
+                    <path d="M 8 18 L 15 10 L 22 18 Z" fill="#F59E0B"/>
+                    <rect x="10" y="17" width="10" height="5" fill="#FFFFFF"/>
+                  </g>
+
+                  <!-- Dynamic Moving Bus Pulse -->
+                  <circle id="heroBusPulse" cx="220" cy="175" r="18" fill="#1264E8" opacity="0.25"/>
+
+                  <!-- Dynamic Moving Bus Marker (Updated in main.js) -->
+                  <g id="heroBusMarker" transform="translate(220, 175)">
+                    <g transform="translate(-18, -14)">
+                      <!-- Yellow School Bus Vector -->
+                      <rect x="0" y="2" width="36" height="20" rx="3.5" fill="#F59E0B" stroke="#D97706" stroke-width="1.2"/>
+                      <rect x="3" y="4" width="4.5" height="5" rx="0.8" fill="#101D35"/>
+                      <rect x="9.5" y="4" width="4.5" height="5" rx="0.8" fill="#101D35"/>
+                      <rect x="16" y="4" width="4.5" height="5" rx="0.8" fill="#101D35"/>
+                      <rect x="22.5" y="4" width="4.5" height="5" rx="0.8" fill="#101D35"/>
+                      <rect x="29" y="4" width="4.5" height="5" rx="0.8" fill="#101D35"/>
+                      <line x1="1" y1="13" x2="35" y2="13" stroke="#101D35" stroke-width="1.8"/>
+                      <circle cx="8" cy="22" r="3.5" fill="#101D35" stroke="#FFFFFF" stroke-width="1"/>
+                      <circle cx="28" cy="22" r="3.5" fill="#101D35" stroke="#FFFFFF" stroke-width="1"/>
+                    </g>
+                  </g>
+                </svg>
+
+                <!-- Floating Live ETA Card Overlay -->
+                <div class="floating-eta-card">
+                  <div class="eta-left">
+                    <div class="eta-icon-box">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="14" rx="2"/>
+                        <path d="M7 15h.01M17 15h.01M3 9h18"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <div class="eta-title" id="heroNextStop">Maple Oak Avenue (Next Stop)</div>
+                      <div class="eta-desc">
+                        <span>Speed: </span><strong id="heroSpeedVal" style="color: var(--color-navy);">32 km/h</strong> • Normal Traffic Flow
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="eta-countdown">
+                    <div class="eta-time" id="heroEtaMinutes">6 min</div>
+                    <div class="eta-status">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                        <polyline points="20 6 9 17 4 12"/>
+                      </svg>
+                      On Schedule
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Interactive Demo Controls -->
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 16px; font-size: 13px; color: var(--color-text-muted);">
+                <button id="heroPauseBtn" class="btn btn-secondary btn-sm" style="padding: 4px 10px; font-size: 12px;">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                  Pause Tracking
+                </button>
+                <button id="heroSwitchBusBtn" class="btn btn-secondary btn-sm" style="padding: 4px 10px; font-size: 12px;">
+                  Showing: Bus #04 (Morning Run)
+                </button>
+                <span>Live GPS Feed Simulation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: PROBLEM STATEMENT
+         ========================================================================== -->
+    <section class="section problems-section" id="problem-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow eyebrow-navy">THE REALITY OF SCHOOL TRANSPORT</span>
+          <h2 class="heading-lg">School Transportation Shouldn't Be a Daily Guessing Game.</h2>
+          <p class="body-lg" style="margin-top: 14px;">
+            Every morning and afternoon, thousands of parents and school transport coordinators deal with preventable friction, anxiety, and repetitive communication.
+          </p>
+        </div>
+
+        <div class="problems-grid">
+          <!-- Problem 1: Parents -->
+          <div class="problem-card">
+            <div class="problem-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <h3 class="heading-md">Parents Often Don't Know Where the School Bus Is</h3>
+            <p class="body-md" style="margin-top: 10px;">
+              Parents wait by roadside stops in harsh weather—extreme sun, winter cold, or heavy rain—unsure whether the bus has already departed, is delayed by traffic, or has not left campus yet.
+            </p>
+            <div class="problem-scenario">
+              "Did we miss the bus by 2 minutes, or is it stuck in morning traffic? Should I drive my child to school instead?"
+            </div>
+          </div>
+
+          <!-- Problem 2: School Admins -->
+          <div class="problem-card">
+            <div class="problem-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <h3 class="heading-md">Schools Face Massive Coordination Challenges</h3>
+            <p class="body-md" style="margin-top: 10px;">
+              School front desks and transport managers are swamped with dozens of frantic calls during morning and afternoon pick-and-drop windows, making proactive supervision virtually impossible.
+            </p>
+            <div class="problem-scenario">
+              "Our administrative phone lines ring continuously for 45 minutes every morning just answering 'Where is Bus 7?'"
+            </div>
+          </div>
+
+          <!-- Problem 3: Communication Gaps -->
+          <div class="problem-card">
+            <div class="problem-icon-wrapper">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <h3 class="heading-md">Communication Gaps Create Unnecessary Uncertainty</h3>
+            <p class="body-md" style="margin-top: 10px;">
+              Drivers cannot safely take phone calls while operating heavy vehicles in city traffic. Without a connected digital channel, minor delays turn into widespread parental panic.
+            </p>
+            <div class="problem-scenario">
+              "Calling the driver directly while they are driving is unsafe and creates significant distraction on the road."
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: OUR SOLUTION (ONE CONNECTED PLATFORM, THREE STAKEHOLDERS)
+         ========================================================================== -->
+    <section class="section solution-section" id="solution-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow eyebrow-teal">THE BUSVIEW PLATFORM</span>
+          <h2 class="heading-lg">One Connected Platform. Three Stakeholders. Better Visibility.</h2>
+          <p class="body-lg" style="margin-top: 14px;">
+            BusView bridges the information gap between school administration, parents, and bus drivers with a dedicated, purposeful interface for each stakeholder.
+          </p>
+        </div>
+
+        <div class="stakeholders-grid">
+          <!-- Stakeholder 1: For Schools -->
+          <div class="stakeholder-card">
+            <div class="stakeholder-header">
+              <span class="stakeholder-tag tag-school">FOR SCHOOLS &amp; MANAGEMENT</span>
+              <h3 class="heading-md">Centralized Transport Operations</h3>
+              <p class="body-sm" style="margin-top: 6px;">
+                Monitor transportation activities through a single command screen with full fleet visibility.
+              </p>
+            </div>
+
+            <div class="stakeholder-mockup-area">
+              <img src="/assets/admin-dashboard-preview.svg" alt="School Transport Dashboard Preview" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);" />
+            </div>
+
+            <div class="stakeholder-body">
+              <ul class="stakeholder-features-list">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Real-time monitoring of all active school buses</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Route assignment and driver vehicle association</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Drastic reduction in incoming parent inquiry calls</span>
+                </li>
+              </ul>
+
+              <div style="margin-top: 24px;">
+                <a href="/for-schools.html" class="btn btn-secondary" style="width: 100%;">
+                  Explore School Benefits &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stakeholder 2: For Parents -->
+          <div class="stakeholder-card">
+            <div class="stakeholder-header">
+              <span class="stakeholder-tag tag-parent">FOR PARENTS &amp; GUARDIANS</span>
+              <h3 class="heading-md">Live Bus Location &amp; ETA</h3>
+              <p class="body-sm" style="margin-top: 6px;">
+                Know exactly when the bus will reach your stop without repeated calls or guesswork.
+              </p>
+            </div>
+
+            <div class="stakeholder-mockup-area">
+              <img src="/assets/parent-app-preview.svg" alt="Parent Mobile Tracking Preview" style="height: 190px; width: auto; border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+            </div>
+
+            <div class="stakeholder-body">
+              <ul class="stakeholder-features-list">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Real-time bus movement on an interactive street map</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Dynamic Estimated Arrival Time for pickup &amp; drop-off</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Assigned bus number, driver contact, and route details</span>
+                </li>
+              </ul>
+
+              <div style="margin-top: 24px;">
+                <a href="/for-parents.html" class="btn btn-secondary" style="width: 100%;">
+                  Explore Parent App &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stakeholder 3: For Drivers -->
+          <div class="stakeholder-card">
+            <div class="stakeholder-header">
+              <span class="stakeholder-tag tag-driver">FOR BUS DRIVERS &amp; OPERATORS</span>
+              <h3 class="heading-md">Simple Location Sharing</h3>
+              <p class="body-sm" style="margin-top: 6px;">
+                Share updates through a streamlined, low-distraction interface designed for everyday drivers.
+              </p>
+            </div>
+
+            <div class="stakeholder-mockup-area">
+              <img src="/assets/driver-app-preview.svg" alt="Driver App Preview" style="height: 190px; width: auto; border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);" />
+            </div>
+
+            <div class="stakeholder-body">
+              <ul class="stakeholder-features-list">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>One-tap trip initiation and background location broadcast</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>High-contrast, large buttons accessible when docked</span>
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>Eliminates incoming phone calls while driving</span>
+                </li>
+              </ul>
+
+              <div style="margin-top: 24px;">
+                <a href="/features.html#driver-features" class="btn btn-secondary" style="width: 100%;">
+                  View Driver Capabilities &rarr;
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: CORE PRODUCT FEATURES
+         ========================================================================== -->
+    <section class="section features-section" id="features-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">BUILT AROUND CONFIRMED CAPABILITIES</span>
+          <h2 class="heading-lg">Engineered for Transparency and Reliability</h2>
+          <p class="body-lg" style="margin-top: 14px;">
+            BusView is built on practical, field-tested transportation technologies. No unnecessary gimmicks—just clear, dependable tracking.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1: Live School Bus Tracking -->
+          <div class="feature-box">
+            <div>
+              <div class="feature-top">
+                <div class="feature-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                    <circle cx="12" cy="9" r="2.5"/>
+                  </svg>
+                </div>
+                <span class="stakeholder-tag tag-school">CORE</span>
+              </div>
+              <h3 class="heading-sm">Live School Bus Tracking</h3>
+              <p class="body-sm" style="margin-top: 8px;">
+                Parents can view the real-time position of their child's assigned school bus as it moves along its designated route on an interactive street map.
+              </p>
+            </div>
+            <div class="feature-mini-visual">
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <span style="font-weight: 600; color: var(--color-navy);">Route 4A • Bus 04</span>
+                <span style="color: var(--color-teal); font-weight: 700;">● Active GPS</span>
+              </div>
+              <div style="color: var(--color-text-muted); font-size: 11px; margin-top: 4px;">Lat: 28.5355° N, Long: 77.3910° E</div>
+            </div>
+          </div>
+
+          <!-- Feature 2: Estimated Arrival Time -->
+          <div class="feature-box">
+            <div>
+              <div class="feature-top">
+                <div class="feature-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <span class="stakeholder-tag tag-parent">PREDICTIVE</span>
+              </div>
+              <h3 class="heading-sm">Estimated Arrival Time (ETA)</h3>
+              <p class="body-sm" style="margin-top: 8px;">
+                Calculate estimated arrival information based on ongoing vehicle movement, helping parents prepare for student pickup and drop-off with confidence.
+              </p>
+            </div>
+            <div class="feature-mini-visual">
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <span style="color: var(--color-text-muted);">Estimated Stop Arrival</span>
+                <span style="font-weight: 800; color: var(--color-primary); font-size: 14px;">~8 Minutes</span>
+              </div>
+              <div style="color: #059669; font-size: 11px; margin-top: 4px; font-weight: 600;">Updated 15 seconds ago</div>
+            </div>
+          </div>
+
+          <!-- Feature 3: Parent Experience -->
+          <div class="feature-box">
+            <div>
+              <div class="feature-top">
+                <div class="feature-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                    <line x1="12" y1="18" x2="12.01" y2="18"/>
+                  </svg>
+                </div>
+                <span class="stakeholder-tag tag-parent">ACCESSIBLE</span>
+              </div>
+              <h3 class="heading-sm">Simple Parent Experience</h3>
+              <p class="body-sm" style="margin-top: 8px;">
+                An intuitive, clutter-free mobile view where parents immediately see their child's bus, driver contact, and stop progress without complicated menus.
+              </p>
+            </div>
+            <div class="feature-mini-visual">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--color-primary);"></span>
+                <span style="font-weight: 600; color: var(--color-navy);">Student: Aarav Sharma (Grade 4B)</span>
+              </div>
+              <div style="color: var(--color-text-muted); font-size: 11px; margin-top: 4px;">Assigned Stop: Maple Oak Avenue</div>
+            </div>
+          </div>
+
+          <!-- Feature 4: School Administration Dashboard -->
+          <div class="feature-box">
+            <div>
+              <div class="feature-top">
+                <div class="feature-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="3" y1="9" x2="21" y2="9"/>
+                    <line x1="9" y1="21" x2="9" y2="9"/>
+                  </svg>
+                </div>
+                <span class="stakeholder-tag tag-school">MANAGEMENT</span>
+              </div>
+              <h3 class="heading-sm">School Administration Dashboard</h3>
+              <p class="body-sm" style="margin-top: 8px;">
+                Centralized oversight for principals, transport managers, and administrative committees to view active buses, speeds, and trip completion status.
+              </p>
+            </div>
+            <div class="feature-mini-visual">
+              <div style="display: flex; justify-content: space-between; font-weight: 600;">
+                <span>Fleet: 18 Buses Active</span>
+                <span style="color: var(--color-primary);">100% Tracking</span>
+              </div>
+              <div style="color: var(--color-text-muted); font-size: 11px; margin-top: 4px;">Morning session: 0 delays reported</div>
+            </div>
+          </div>
+
+          <!-- Feature 5: Driver Location Updates -->
+          <div class="feature-box">
+            <div>
+              <div class="feature-top">
+                <div class="feature-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                  </svg>
+                </div>
+                <span class="stakeholder-tag tag-driver">TELEMETRY</span>
+              </div>
+              <h3 class="heading-sm">Driver Location Updates</h3>
+              <p class="body-sm" style="margin-top: 8px;">
+                Secure location broadcast from the driver's device connects directly into the BusView system, supporting location visibility without hardware complexity.
+              </p>
+            </div>
+            <div class="feature-mini-visual">
+              <div style="display: flex; justify-content: space-between; font-weight: 600;">
+                <span>Broadcast Cadence</span>
+                <span style="color: #059669;">Every 5 Seconds</span>
+              </div>
+              <div style="color: var(--color-text-muted); font-size: 11px; margin-top: 4px;">Optimized for low battery &amp; data usage</div>
+            </div>
+          </div>
+
+          <!-- Feature 6: Transportation Monitoring -->
+          <div class="feature-box">
+            <div>
+              <div class="feature-top">
+                <div class="feature-icon-box">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                  </svg>
+                </div>
+                <span class="stakeholder-tag tag-school">VISIBILITY</span>
+              </div>
+              <h3 class="heading-sm">Transportation Monitoring &amp; Logs</h3>
+              <p class="body-sm" style="margin-top: 8px;">
+                Complete situational awareness across morning pickup and evening drop-off runs, with timestamps, route milestones, and operational accountability.
+              </p>
+            </div>
+            <div class="feature-mini-visual">
+              <div style="display: flex; justify-content: space-between; font-weight: 600;">
+                <span>Historical Logs</span>
+                <span style="color: var(--color-navy);">Verified Timestamps</span>
+              </div>
+              <div style="color: var(--color-text-muted); font-size: 11px; margin-top: 4px;">Audit trail for school administration</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Planned Capabilities Notice (Strict Transparency) -->
+        <div style="margin-top: 48px; background: #F1F5F9; border: 1px dashed #CBD5E1; border-radius: var(--radius-lg); padding: 24px 28px; display: flex; align-items: flex-start; gap: 16px;">
+          <div style="background: #E2E8F0; padding: 8px; border-radius: 8px; color: var(--color-navy); flex-shrink: 0;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="16" x2="12" y2="12"/>
+              <line x1="12" y1="8" x2="12.01" y2="8"/>
+            </svg>
+          </div>
+          <div>
+            <div style="font-weight: 700; font-size: 14.5px; color: var(--color-navy);">
+              Product Roadmap Note: Confirmed Capabilities vs. Planned Research
+            </div>
+            <p style="font-size: 13.5px; color: var(--color-text-muted); margin-top: 4px; line-height: 1.5;">
+              The features highlighted above reflect BusView's core active capabilities. Advanced research areas such as automated RFID/NFC attendance, predictive weather delays, and automated route re-balancing are part of our <strong>planned roadmap</strong> and are only deployed once rigorously validated in school pilot cohorts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: HOW BUSVIEW WORKS
+         ========================================================================== -->
+    <section class="section how-it-works-section" id="how-it-works-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow eyebrow-teal">SIMPLE 3-STEP INTEGRATION</span>
+          <h2 class="heading-lg">How BusView Works</h2>
+          <p class="body-lg" style="margin-top: 14px;">
+            A straightforward process designed for zero friction and rapid deployment without burdensome IT overhauls.
+          </p>
+        </div>
+
+        <div class="steps-process-wrapper">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-number-circle">1</div>
+            <h3 class="heading-md">School Setup</h3>
+            <p class="body-sm" style="margin-top: 10px;">
+              The school coordinates its transportation roster: configuring bus routes, pickup points, assigned vehicles, and student associations in the BusView admin portal.
+            </p>
+
+            <div class="step-visual-box">
+              <svg width="180" height="80" viewBox="0 0 180 80" fill="none">
+                <rect width="180" height="80" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+                <circle cx="28" cy="24" r="12" fill="#1264E8" opacity="0.1"/>
+                <circle cx="28" cy="24" r="6" fill="#1264E8"/>
+                <text x="50" y="22" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#101D35">Fleet Roster</text>
+                <text x="50" y="34" font-family="'Inter', sans-serif" font-size="9" fill="#64748B">18 Routes Configured</text>
+                <line x1="20" y1="52" x2="160" y2="52" stroke="#F1F5F9" stroke-width="2"/>
+                <rect x="20" y="60" width="80" height="8" rx="4" fill="#E2E8F0"/>
+                <rect x="110" y="60" width="40" height="8" rx="4" fill="#BFDBFE"/>
+              </svg>
+            </div>
+
+            <div style="font-size: 12.5px; font-weight: 600; color: var(--color-primary);">
+              Setup Completed in 24 Hours
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-number-circle">2</div>
+            <h3 class="heading-md">Location Sharing</h3>
+            <p class="body-sm" style="margin-top: 10px;">
+              When the bus begins its morning or afternoon run, the driver starts the journey on their interface. Secure location updates transmit in real time to the platform.
+            </p>
+
+            <div class="step-visual-box">
+              <svg width="180" height="80" viewBox="0 0 180 80" fill="none">
+                <rect width="180" height="80" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+                <circle cx="90" cy="35" r="24" fill="#12CBA5" opacity="0.15"/>
+                <circle cx="90" cy="35" r="14" fill="#12CBA5" opacity="0.3"/>
+                <circle cx="90" cy="35" r="6" fill="#12CBA5"/>
+                <text x="44" y="68" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#0E705A">Broadcast Active • 4G</text>
+              </svg>
+            </div>
+
+            <div style="font-size: 12.5px; font-weight: 600; color: var(--color-teal-hover);">
+              Real-Time Location Broadcast
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-number-circle">3</div>
+            <h3 class="heading-md">Connected Visibility</h3>
+            <p class="body-sm" style="margin-top: 10px;">
+              Parents view their assigned bus location, path progression, and estimated arrival time on mobile. School administrators supervise the entire fleet simultaneously.
+            </p>
+
+            <div class="step-visual-box">
+              <svg width="180" height="80" viewBox="0 0 180 80" fill="none">
+                <rect width="180" height="80" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+                <rect x="20" y="16" width="60" height="48" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+                <circle cx="50" cy="36" r="10" fill="#1264E8" opacity="0.2"/>
+                <text x="36" y="58" font-family="'Inter', sans-serif" font-size="8" font-weight="700" fill="#1264E8">PARENTS</text>
+                
+                <rect x="100" y="16" width="60" height="48" rx="6" fill="#F8FAFC" stroke="#CBD5E1"/>
+                <circle cx="130" cy="36" r="10" fill="#101D35" opacity="0.2"/>
+                <text x="115" y="58" font-family="'Inter', sans-serif" font-size="8" font-weight="700" fill="#101D35">SCHOOL</text>
+              </svg>
+            </div>
+
+            <div style="font-size: 12.5px; font-weight: 600; color: var(--color-primary);">
+              Peace of Mind for Everyone
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: PRODUCT INTERFACE SHOWCASE
+         ========================================================================== -->
+    <section class="section showcase-section" id="showcase-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow eyebrow-teal">PRODUCT INTERFACE SHOWCASE</span>
+          <h2 class="heading-lg">Experience the Actual Software Interfaces</h2>
+          <p class="body-lg" style="margin-top: 14px;">
+            A unified design language across parent mobile views, administrator operations, and driver telemetry.
+          </p>
+        </div>
+
+        <!-- Showcase Tab Controls -->
+        <div class="showcase-tabs-nav" role="tablist">
+          <button class="showcase-tab-btn active" data-target="tab-parents" role="tab" aria-selected="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+              <line x1="12" y1="18" x2="12.01" y2="18"/>
+            </svg>
+            1. Parent Mobile Tracking Screen
+          </button>
+
+          <button class="showcase-tab-btn" data-target="tab-schools" role="tab" aria-selected="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+            2. School Administration Dashboard
+          </button>
+
+          <button class="showcase-tab-btn" data-target="tab-drivers" role="tab" aria-selected="false">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+            3. Driver Location Interface
+          </button>
+        </div>
+
+        <!-- Showcase Content Panels -->
+        <div class="showcase-container">
+          <!-- Panel 1: Parent Mobile App -->
+          <div id="tab-parents" class="showcase-tab-panel active" role="tabpanel">
+            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: center;">
+              <div>
+                <span class="stakeholder-tag tag-parent">PARENT APPLICATION</span>
+                <h3 class="heading-lg" style="color: var(--color-white); margin-top: 12px;">Clear, Real-Time Visibility for Parents</h3>
+                <p class="body-md" style="color: #94A3B8; margin-top: 14px;">
+                  Parents open the app and instantly see where their child's bus is right now, how many stops remain, and the exact estimated arrival window.
+                </p>
+
+                <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 14px;">
+                  <div style="display: flex; align-items: flex-start; gap: 12px; color: #E2E8F0; font-size: 14px;">
+                    <div style="width: 20px; height: 20px; border-radius: 50%; background: var(--color-teal); color: var(--color-navy); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 11px; flex-shrink: 0;">✓</div>
+                    <div><strong>Live Route Progression:</strong> Track stop-by-stop progress with completed stops checked off automatically.</div>
+                  </div>
+                  <div style="display: flex; align-items: flex-start; gap: 12px; color: #E2E8F0; font-size: 14px;">
+                    <div style="width: 20px; height: 20px; border-radius: 50%; background: var(--color-teal); color: var(--color-navy); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 11px; flex-shrink: 0;">✓</div>
+                    <div><strong>Assigned Driver Contact:</strong> View driver and assistant details without needing to search personal contacts.</div>
+                  </div>
+                  <div style="display: flex; align-items: flex-start; gap: 12px; color: #E2E8F0; font-size: 14px;">
+                    <div style="width: 20px; height: 20px; border-radius: 50%; background: var(--color-teal); color: var(--color-navy); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 11px; flex-shrink: 0;">✓</div>
+                    <div><strong>Multi-Child Switcher:</strong> If siblings travel on different buses, toggle between students in one tap.</div>
+                  </div>
+                </div>
+
+                <div style="margin-top: 32px;">
+                  <button class="btn btn-teal btn-md" data-open-modal="enquiry" data-interest="Product Demonstration">
+                    See Parent App in Action &rarr;
+                  </button>
+                </div>
+              </div>
+
+              <!-- Smartphone Mockup Preview -->
+              <div style="display: flex; justify-content: center;">
+                <div class="mobile-device-frame">
+                  <img src="/assets/parent-app-preview.svg" alt="Parent Mobile Tracking Interface" style="width: 100%; border-radius: 30px;" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: School Administration Dashboard -->
+          <div id="tab-schools" class="showcase-tab-panel" role="tabpanel">
+            <div style="display: flex; flex-direction: column; gap: 24px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+                <div>
+                  <span class="stakeholder-tag tag-school">COMMAND CONSOLE</span>
+                  <h3 class="heading-md" style="color: var(--color-white); margin-top: 8px;">
+                    Centralized School Fleet Operations
+                  </h3>
+                  <p class="body-sm" style="color: #94A3B8;">
+                    Unified supervision for school principals, transport in-charges, and administrative supervisors.
+                  </p>
+                </div>
+                <button class="btn btn-primary btn-sm" data-open-modal="enquiry" data-interest="Product Demonstration">
+                  Schedule an Admin Demo
+                </button>
+              </div>
+
+              <!-- High-Fidelity Desktop Mockup -->
+              <div class="mockup-window">
+                <img src="/assets/admin-dashboard-preview.svg" alt="School Administration Command Center" style="width: 100%; height: auto;" />
+              </div>
+
+              <div style="font-size: 12px; color: #94A3B8; text-align: center;">
+                *Interface preview represents actual software design and layout with sample simulated institutional data.
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3: Driver Interface -->
+          <div id="tab-drivers" class="showcase-tab-panel" role="tabpanel">
+            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: center;">
+              <div>
+                <span class="stakeholder-tag tag-driver">DRIVER CONSOLE</span>
+                <h3 class="heading-lg" style="color: var(--color-white); margin-top: 12px;">Purposefully Simple for Drivers</h3>
+                <p class="body-md" style="color: #94A3B8; margin-top: 14px;">
+                  Safety on the road is paramount. The driver console is designed with large touch targets, high contrast, and zero clutter to avoid driver distraction.
+                </p>
+
+                <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 14px;">
+                  <div style="display: flex; align-items: flex-start; gap: 12px; color: #E2E8F0; font-size: 14px;">
+                    <div style="width: 20px; height: 20px; border-radius: 50%; background: var(--color-teal); color: var(--color-navy); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 11px; flex-shrink: 0;">✓</div>
+                    <div><strong>One-Touch Trip Start:</strong> Driver taps once when departing the depot or school campus.</div>
+                  </div>
+                  <div style="display: flex; align-items: flex-start; gap: 12px; color: #E2E8F0; font-size: 14px;">
+                    <div style="width: 20px; height: 20px; border-radius: 50%; background: var(--color-teal); color: var(--color-navy); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 11px; flex-shrink: 0;">✓</div>
+                    <div><strong>Clear Next-Stop Overview:</strong> Shows upcoming stop and expected pickup count at a quick glance.</div>
+                  </div>
+                  <div style="display: flex; align-items: flex-start; gap: 12px; color: #E2E8F0; font-size: 14px;">
+                    <div style="width: 20px; height: 20px; border-radius: 50%; background: var(--color-teal); color: var(--color-navy); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 11px; flex-shrink: 0;">✓</div>
+                    <div><strong>Zero Unsafe Distraction:</strong> Parents no longer need to call the driver while in motion.</div>
+                  </div>
+                </div>
+
+                <div style="margin-top: 32px;">
+                  <a href="/features.html#driver-features" class="btn btn-secondary btn-md">
+                    Learn More About Driver Support &rarr;
+                  </a>
+                </div>
+              </div>
+
+              <!-- Driver Phone Frame -->
+              <div style="display: flex; justify-content: center;">
+                <div class="mobile-device-frame">
+                  <img src="/assets/driver-app-preview.svg" alt="Driver App Screen Preview" style="width: 100%; border-radius: 30px;" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: FREE PILOT PROGRAMME (PRIMARY CONVERSION SECTION)
+         ========================================================================== -->
+    <section class="section pilot-section" id="pilot-section">
+      <div class="container">
+        <div class="pilot-card-container">
+          <div class="pilot-grid">
+            <!-- Left Info -->
+            <div>
+              <span class="eyebrow eyebrow-teal">EXCLUSIVE INVITATION FOR INSTITUTIONS</span>
+              <h2 class="heading-lg">Experience BusView at Your School.</h2>
+              <p class="body-lg" style="margin-top: 16px;">
+                We are inviting selected schools to participate in our pilot programme. Experience the BusView platform, explore its capabilities, and help us improve the school transportation experience.
+              </p>
+
+              <div class="pilot-benefits-list">
+                <div class="pilot-benefit-item">
+                  <div class="pilot-benefit-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <div>
+                    <div class="pilot-benefit-title">Free of Charge</div>
+                    <div class="pilot-benefit-desc">No upfront fees or platform charges during the pilot period.</div>
+                  </div>
+                </div>
+
+                <div class="pilot-benefit-item">
+                  <div class="pilot-benefit-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <div>
+                    <div class="pilot-benefit-title">No Financial Commitment</div>
+                    <div class="pilot-benefit-desc">Zero lock-in contracts or mandatory commitments after the pilot.</div>
+                  </div>
+                </div>
+
+                <div class="pilot-benefit-item">
+                  <div class="pilot-benefit-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <div>
+                    <div class="pilot-benefit-title">Product Feedback Opportunity</div>
+                    <div class="pilot-benefit-desc">Shape platform features according to your school's unique needs.</div>
+                  </div>
+                </div>
+
+                <div class="pilot-benefit-item">
+                  <div class="pilot-benefit-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <div>
+                    <div class="pilot-benefit-title">Direct Team Support</div>
+                    <div class="pilot-benefit-desc">Hands-on coordination with the Seniorbit engineering team.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Callout Card -->
+            <div class="pilot-action-box">
+              <div style="width: 56px; height: 56px; border-radius: 50%; background: var(--color-primary-light); color: var(--color-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              </div>
+
+              <div>
+                <div style="font-size: 13px; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.05em;">PILOT COHORT</div>
+                <h3 class="heading-md" style="margin-top: 4px;">Enroll Your School Today</h3>
+                <p class="body-sm" style="margin-top: 6px;">
+                  We are accepting applications from qualified schools with active transportation operations.
+                </p>
+              </div>
+
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 8px;">
+                <button class="btn btn-primary btn-lg" data-open-modal="enquiry" data-interest="Free Pilot Programme">
+                  Join the Pilot Programme
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <a href="#enquiry-section" class="btn btn-secondary btn-sm">
+                  Or Fill School Details Below
+                </a>
+              </div>
+
+              <div style="font-size: 12px; color: var(--color-text-subtle);">
+                Questions? Email: <a href="mailto:pilot@busview.in" style="color: var(--color-primary); font-weight: 600;">pilot@busview.in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 9: ABOUT BUSVIEW & SENIORBIT
+         ========================================================================== -->
+    <section class="section about-section" id="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <span class="eyebrow eyebrow-navy">ABOUT SENIORBIT</span>
+            <h2 class="heading-lg">Building Practical Digital Solutions for Real-World School Challenges.</h2>
+            <p class="body-lg" style="margin-top: 16px;">
+              <strong>BusView</strong> is a technology initiative by <strong>Seniorbit OPC Private Limited</strong>, focused on building practical digital solutions for everyday challenges in school transportation.
+            </p>
+            <p class="body-md" style="margin-top: 12px;">
+              Rather than pushing complicated, over-engineered hardware that strains school budgets, Seniorbit designs thoughtful software that solves real coordination headaches with clarity, safety, and operational discipline.
+            </p>
+            
+            <div style="margin-top: 24px;">
+              <a href="/about.html" class="btn btn-secondary">
+                Learn More About Our Company &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div class="about-values-grid">
+            <div class="about-value-card">
+              <div style="font-size: 24px; margin-bottom: 8px; color: var(--color-primary); font-weight: 800;">01</div>
+              <h3 class="heading-sm">Transparency First</h3>
+              <p class="body-sm" style="margin-top: 6px;">
+                Direct visibility into bus movement removes unnecessary friction and builds genuine trust with parents.
+              </p>
+            </div>
+
+            <div class="about-value-card">
+              <div style="font-size: 24px; margin-bottom: 8px; color: var(--color-primary); font-weight: 800;">02</div>
+              <h3 class="heading-sm">Safety By Design</h3>
+              <p class="body-sm" style="margin-top: 6px;">
+                Low distraction for drivers on duty and complete privacy controls for student personal information.
+              </p>
+            </div>
+
+            <div class="about-value-card">
+              <div style="font-size: 24px; margin-bottom: 8px; color: var(--color-primary); font-weight: 800;">03</div>
+              <h3 class="heading-sm">Practical Usability</h3>
+              <p class="body-sm" style="margin-top: 6px;">
+                Intuitive interfaces requiring zero specialized IT training for school administrators and staff.
+              </p>
+            </div>
+
+            <div class="about-value-card">
+              <div style="font-size: 24px; margin-bottom: 8px; color: var(--color-primary); font-weight: 800;">04</div>
+              <h3 class="heading-sm">Continuous Support</h3>
+              <p class="body-sm" style="margin-top: 6px;">
+                Direct human assistance from engineers who understand the rhythm of school transportation days.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 10: FREQUENTLY ASKED QUESTIONS (FAQ)
+         ========================================================================== -->
+    <section class="section faq-section" id="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">COMMON INQUIRIES</span>
+          <h2 class="heading-lg">Frequently Asked Questions</h2>
+          <p class="body-lg" style="margin-top: 14px;">
+            Clear, straightforward answers about the BusView platform, tracking workflow, and pilot participation.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item open">
+            <button class="faq-question">
+              <span>What is BusView?</span>
+              <span class="faq-icon">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                BusView is a connected digital platform developed by Seniorbit OPC Private Limited to make school transportation transparent, manageable, and convenient. It connects schools, parents, and drivers with live bus tracking, arrival updates, and centralized fleet monitoring.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does live bus tracking work?</span>
+              <span class="faq-icon">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                During active morning or afternoon trips, the bus driver's device shares real-time location data securely with the BusView platform. School administrators can monitor the bus moving on an interactive dashboard map, while parents can view their child's specific assigned bus location and estimated arrival time on mobile.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Who can use BusView?</span>
+              <span class="faq-icon">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                BusView is designed for three stakeholders: school administrators/transport managers (who oversee fleet operations), parents/guardians (who track their child's assigned bus), and bus drivers (who broadcast location updates through a simple interface). Primary onboarding is initiated at the school level.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How can a school participate in the pilot programme?</span>
+              <span class="faq-icon">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Schools can apply through our online enquiry form by selecting "Free Pilot Programme". Our team will coordinate with your school transport supervisor to verify routes, set up driver accounts, and guide your team through a pilot deployment.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is the pilot programme really free?</span>
+              <span class="faq-icon">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. The pilot programme is completely free of charge. There are no upfront fees, hidden charges, or mandatory commitments during the pilot phase. The purpose of the pilot is to enable schools to experience the platform firsthand and provide constructive feedback.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What does a school need to get started?</span>
+              <span class="faq-icon">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Getting started is simple: the school needs basic transport roster details (bus numbers, assigned drivers, and stop lists) and a standard internet-enabled device or smartphone for the driver during transit. No specialized, expensive vehicle alterations are required.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How can parents access bus location information?</span>
+              <span class="faq-icon">&#9662;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Once a school enrolls and configures student transport assignments, parents receive secure login credentials or an activation link. When logged in, parents can view their child's assigned bus live on the map during scheduled trip hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 11: FINAL CALL TO ACTION
+         ========================================================================== -->
+    <section class="section final-cta-section">
+      <div class="container">
+        <div class="final-cta-box">
+          <span class="eyebrow eyebrow-teal">TAKE THE NEXT STEP</span>
+          <h2 class="heading-lg">Let's Make School Transportation More Connected.</h2>
+          <p class="body-lg">
+            Partner with BusView and explore a smarter way to manage school transportation. Empower your school staff and give parents true peace of mind.
+          </p>
+          <div class="final-cta-actions">
+            <button class="btn btn-primary btn-lg" data-open-modal="enquiry" data-interest="Product Demonstration">
+              Request a Demo
+            </button>
+            <button class="btn btn-teal btn-lg" data-open-modal="enquiry" data-interest="Free Pilot Programme">
+              Join the Free Pilot
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6 EMBED: FUNCTIONAL SCHOOL ENQUIRY FORM
+         ========================================================================== -->
+    <section class="section" id="enquiry-section" style="background-color: var(--color-white); border-top: 1px solid var(--color-border);">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">GET IN TOUCH WITH SENIORBIT</span>
+          <h2 class="heading-lg">School Enquiry &amp; Pilot Application</h2>
+          <p class="body-lg" style="margin-top: 14px;">
+            Whether you are looking for a product demonstration or would like to enroll your school in our Free Pilot, please provide your details below.
+          </p>
+        </div>
+
+        <div style="max-width: 780px; margin: 0 auto;">
+          <div class="form-card">
+            <!-- Form Success Banner -->
+            <div class="form-success-banner" role="alert">
+              <div style="width: 48px; height: 48px; border-radius: 50%; background: #10B981; color: #FFFFFF; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3 class="heading-md" style="color: #065F46;">Thank You for Your Enquiry!</h3>
+              <p class="body-md" style="color: #047857; margin-top: 8px;">
+                Your request has been received with Reference ID: <strong class="reference-id">BV-849201</strong>.
+              </p>
+              <div style="margin-top: 16px; padding: 16px; background: #FFFFFF; border: 1px solid #A7F3D0; border-radius: 8px; font-size: 13.5px; text-align: left; color: var(--color-navy);">
+                <div><strong>School:</strong> <span class="submitted-school">Heritage Public</span></div>
+                <div style="margin-top: 4px;"><strong>Official Email:</strong> <span class="submitted-email">principal@heritage.edu</span></div>
+                <div style="margin-top: 4px;"><strong>Program Selected:</strong> <span class="submitted-program">Free Pilot Programme</span></div>
+                <div style="margin-top: 4px;"><strong>Next Step:</strong> A member of the BusView / Seniorbit team will reach out to schedule an onboarding call.</div>
+              </div>
+              <p style="font-size: 12px; color: #047857; margin-top: 14px;">
+                Saved locally in your browser storage session.
+              </p>
+            </div>
+
+            <!-- Main Enquiry Form -->
+            <form class="enquiry-form" novalidate>
+              <!-- Interest Selection -->
+              <div class="form-group">
+                <label class="form-label">
+                  <span>I am interested in: <span class="required-star">*</span></span>
+                </label>
+                <div class="form-radio-group">
+                  <label class="radio-card selected">
+                    <input type="radio" name="interest" value="Free Pilot Programme" checked />
+                    <div>
+                      <div style="font-weight: 700; font-size: 14px; color: var(--color-navy);">Free Pilot Programme</div>
+                      <div style="font-size: 12px; color: var(--color-text-muted);">Experience BusView at your school free of charge</div>
+                    </div>
+                  </label>
+
+                  <label class="radio-card">
+                    <input type="radio" name="interest" value="Product Demonstration" />
+                    <div>
+                      <div style="font-weight: 700; font-size: 14px; color: var(--color-navy);">Product Demonstration</div>
+                      <div style="font-size: 12px; color: var(--color-text-muted);">Guided virtual walkthrough of school &amp; parent apps</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Row 1: School Name & Buses -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="schoolName">
+                    <span>School / Institution Name <span class="required-star">*</span></span>
+                  </label>
+                  <input type="text" id="schoolName" name="schoolName" class="form-input" placeholder="e.g. St. Xavier's Senior Secondary" required />
+                  <span class="field-error-msg">Please enter a valid school name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="busCount">
+                    <span>Approx. Number of School Buses <span class="required-star">*</span></span>
+                  </label>
+                  <select id="busCount" name="busCount" class="form-select" required>
+                    <option value="">Select bus fleet size...</option>
+                    <option value="1-5">1 – 5 Buses</option>
+                    <option value="6-15">6 – 15 Buses</option>
+                    <option value="16-30">16 – 30 Buses</option>
+                    <option value="31+">31+ Buses</option>
+                  </select>
+                  <span class="field-error-msg">Please select an approximate bus fleet size.</span>
+                </div>
+              </div>
+
+              <!-- Row 2: Contact Person & Designation -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="contactName">
+                    <span>Contact Person Name <span class="required-star">*</span></span>
+                  </label>
+                  <input type="text" id="contactName" name="contactName" class="form-input" placeholder="e.g. Dr. Rajesh Sharma" required />
+                  <span class="field-error-msg">Please enter contact person name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="designation">
+                    <span>Designation <span class="required-star">*</span></span>
+                  </label>
+                  <input type="text" id="designation" name="designation" class="form-input" placeholder="e.g. Principal / Transport Manager / Trustee" required />
+                  <span class="field-error-msg">Please provide your role or designation.</span>
+                </div>
+              </div>
+
+              <!-- Row 3: Official Email & Phone -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="email">
+                    <span>Official Email Address <span class="required-star">*</span></span>
+                  </label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="name@schooldomain.edu" required />
+                  <span class="field-error-msg">Please enter a valid official email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="phone">
+                    <span>Phone Number <span class="required-star">*</span></span>
+                  </label>
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 98765 43210" required />
+                  <span class="field-error-msg">Please enter a valid contact phone number.</span>
+                </div>
+              </div>
+
+              <!-- Row 4: City & State -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="city">
+                    <span>City <span class="required-star">*</span></span>
+                  </label>
+                  <input type="text" id="city" name="city" class="form-input" placeholder="e.g. Bengaluru" required />
+                  <span class="field-error-msg">Please enter your city.</span>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="state">
+                    <span>State / Union Territory <span class="required-star">*</span></span>
+                  </label>
+                  <select id="state" name="state" class="form-select" required>
+                    <option value="">Select state...</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Delhi NCR">Delhi NCR</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Other">Other State / UT</option>
+                  </select>
+                  <span class="field-error-msg">Please select your state.</span>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label class="form-label" for="message">
+                  <span>Additional Transportation Details / Message (Optional)</span>
+                </label>
+                <textarea id="message" name="message" class="form-textarea" rows="3" placeholder="Tell us about your current school transport setup, routes, or any specific questions..."></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div>
+                <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                  Submit School Enquiry
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <p style="font-size: 12px; color: var(--color-text-subtle); text-align: center; margin-top: 10px;">
+                  We respect institutional privacy. Your contact details are strictly used to coordinate your enquiry.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 12: FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <img src="/assets/busview-logo-white.svg" alt="BusView Logo" class="footer-brand-logo" />
+          <p style="font-size: 13.5px; line-height: 1.6; color: #94A3B8;">
+            BusView is a smart school transportation management and live bus tracking platform developed by <strong>Seniorbit OPC Private Limited</strong>. Every Journey, Within Your View.
+          </p>
+          <div style="font-size: 12px; color: #64748B;">
+            A Seniorbit OPC Private Limited technology initiative.
+          </div>
+        </div>
+
+        <!-- Product Links -->
+        <div>
+          <div class="footer-col-title">Platform</div>
+          <ul class="footer-links-list">
+            <li><a href="/for-schools.html">For Schools</a></li>
+            <li><a href="/for-parents.html">For Parents</a></li>
+            <li><a href="/features.html">Core Features</a></li>
+            <li><a href="/how-it-works.html">How It Works</a></li>
+            <li><a href="/#showcase-section">Interface Mockups</a></li>
+            <li><a href="/pilot.html">Free Pilot Programme</a></li>
+          </ul>
+        </div>
+
+        <!-- Stakeholders & About -->
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links-list">
+            <li><a href="/about.html">About Seniorbit</a></li>
+            <li><a href="/#problem-section">Why BusView</a></li>
+            <li><a href="/#faq-section">Frequently Asked Questions</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/terms.html">Terms and Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Placeholders -->
+        <div>
+          <div class="footer-col-title">School Inquiries</div>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>contact@busview.in</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Pilot Coordination Desk</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span>Mon – Fri: 08:00 AM – 06:00 PM IST</span>
+            </div>
+            <div style="margin-top: 8px;">
+              <button class="btn btn-teal btn-sm" data-open-modal="enquiry" data-interest="Free Pilot Programme">
+                Join Free Pilot
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 Seniorbit OPC Private Limited. All rights reserved. BusView™ is a proprietary product of Seniorbit OPC Private Limited.
+        </div>
+        <div class="footer-legal-links">
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms and Conditions</a>
+          <a href="/#faq-section">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL: SCHOOL ENQUIRY & PILOT APPLICATION DIALOG
+       ========================================================================== -->
+  <div class="modal-overlay" id="enquiryModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+      
+      <div style="margin-bottom: 24px;">
+        <span class="eyebrow eyebrow-teal">BUSVIEW PLATFORM ENQUIRY</span>
+        <h2 class="heading-md" id="modalTitle" style="margin-top: 6px;">Request a Demo or Join the Free Pilot</h2>
+        <p class="body-sm" style="margin-top: 4px;">
+          Tell us about your school fleet. Our team will prepare a customized demonstration for your institution.
+        </p>
+      </div>
+
+      <!-- Modal Form Banner -->
+      <div class="form-success-banner" role="alert">
+        <h3 class="heading-md" style="color: #065F46;">Enquiry Submitted Successfully</h3>
+        <p class="body-md" style="color: #047857; margin-top: 6px;">
+          Reference ID: <strong class="reference-id">BV-849201</strong>. Our transport specialist will contact your administration shortly.
+        </p>
+      </div>
+
+      <!-- Modal Form -->
+      <form class="enquiry-form" novalidate>
+        <div class="form-group">
+          <label class="form-label">
+            <span>Interest: <span class="required-star">*</span></span>
+          </label>
+          <div class="form-radio-group">
+            <label class="radio-card selected">
+              <input type="radio" name="interest" value="Product Demonstration" checked />
+              <span style="font-weight: 600; font-size: 13.5px;">Product Demonstration</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="interest" value="Free Pilot Programme" />
+              <span style="font-weight: 600; font-size: 13.5px;">Free Pilot Programme</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="modalSchoolName">School Name <span class="required-star">*</span></label>
+            <input type="text" id="modalSchoolName" name="schoolName" class="form-input" placeholder="School Name" required />
+            <span class="field-error-msg">School name is required.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalBusCount">Number of Buses <span class="required-star">*</span></label>
+            <select id="modalBusCount" name="busCount" class="form-select" required>
+              <option value="">Select bus count...</option>
+              <option value="1-5">1 – 5 Buses</option>
+              <option value="6-15">6 – 15 Buses</option>
+              <option value="16-30">16 – 30 Buses</option>
+              <option value="31+">31+ Buses</option>
+            </select>
+            <span class="field-error-msg">Please select bus count.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="modalContactName">Contact Person <span class="required-star">*</span></label>
+            <input type="text" id="modalContactName" name="contactName" class="form-input" placeholder="Your Name" required />
+            <span class="field-error-msg">Contact name is required.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalDesignation">Designation <span class="required-star">*</span></label>
+            <input type="text" id="modalDesignation" name="designation" class="form-input" placeholder="Role at School" required />
+            <span class="field-error-msg">Designation is required.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="modalEmail">Official Email <span class="required-star">*</span></label>
+            <input type="email" id="modalEmail" name="email" class="form-input" placeholder="email@school.edu" required />
+            <span class="field-error-msg">Valid email is required.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalPhone">Phone Number <span class="required-star">*</span></label>
+            <input type="tel" id="modalPhone" name="phone" class="form-input" placeholder="+91 98765 43210" required />
+            <span class="field-error-msg">Valid phone number is required.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="modalCity">City <span class="required-star">*</span></label>
+            <input type="text" id="modalCity" name="city" class="form-input" placeholder="City" required />
+            <span class="field-error-msg">City is required.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="modalState">State <span class="required-star">*</span></label>
+            <select id="modalState" name="state" class="form-select" required>
+              <option value="">Select state...</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Delhi NCR">Delhi NCR</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Other">Other State</option>
+            </select>
+            <span class="field-error-msg">State is required.</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="modalMessage">Message / Specific Requirements</label>
+          <textarea id="modalMessage" name="message" class="form-textarea" rows="2" placeholder="Brief note on your transportation needs..."></textarea>
+        </div>
+
+        <div style="margin-top: 8px;">
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+            Submit Request
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

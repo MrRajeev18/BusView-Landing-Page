@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" fill="none" width="360" height="640">
+  <defs>
+    <filter id="shadowApp" x="0" y="0" width="360" height="640" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Phone Background -->
+  <rect width="360" height="640" rx="36" fill="#F8FAFC"/>
+
+  <!-- Phone Header Status Bar -->
+  <rect width="360" height="44" fill="#101D35"/>
+  <text x="28" y="28" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">08:14</text>
+  <!-- Signal, Wifi, Battery -->
+  <g transform="translate(290, 18)" fill="#FFFFFF">
+    <rect x="0" y="4" width="3" height="8" rx="0.5"/>
+    <rect x="5" y="2" width="3" height="10" rx="0.5"/>
+    <rect x="10" y="0" width="3" height="12" rx="0.5"/>
+    <rect x="22" y="1" width="18" height="10" rx="2" stroke="#FFFFFF" fill="none"/>
+    <rect x="24" y="3" width="12" height="6" rx="1" fill="#FFFFFF"/>
+  </g>
+
+  <!-- In-App App Bar -->
+  <g transform="translate(0, 44)">
+    <rect width="360" height="60" fill="#101D35"/>
+    <text x="20" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="800" fill="#FFFFFF">BusView</text>
+    <circle cx="88" cy="27" r="3" fill="#12CBA5"/>
+    <text x="20" y="50" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">Greenwood High School • Bus 04</text>
+
+    <!-- Student Switcher Pill -->
+    <rect x="236" y="14" width="104" height="32" rx="16" fill="#1E293B" stroke="#334155"/>
+    <circle cx="252" cy="30" r="10" fill="#1264E8"/>
+    <text x="248" y="34" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">A</text>
+    <text x="268" y="34" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#FFFFFF">Aarav</text>
+  </g>
+
+  <!-- Live Map View Area -->
+  <g transform="translate(0, 104)">
+    <rect width="360" height="280" fill="#E2E8F0"/>
+
+    <!-- Map road network -->
+    <path d="M 0 60 L 360 60" stroke="#CBD5E1" stroke-width="8"/>
+    <path d="M 0 170 L 360 170" stroke="#CBD5E1" stroke-width="8"/>
+    <path d="M 90 0 L 90 280" stroke="#CBD5E1" stroke-width="8"/>
+    <path d="M 270 0 L 270 280" stroke="#CBD5E1" stroke-width="8"/>
+    
+    <!-- Route Line -->
+    <path d="M 40 210 C 90 190, 140 120, 260 120 L 320 60" stroke="#1264E8" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Stops -->
+    <circle cx="40" cy="210" r="6" fill="#1264E8" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="150" cy="132" r="6" fill="#1264E8" stroke="#FFFFFF" stroke-width="2"/>
+    
+    <!-- Home Pin (Student Pickup Point) -->
+    <g transform="translate(250, 100)">
+      <circle cx="10" cy="10" r="14" fill="#12CBA5" opacity="0.2"/>
+      <circle cx="10" cy="10" r="7" fill="#12CBA5" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="-30" y="-22" width="80" height="20" rx="10" fill="#101D35"/>
+      <text x="-22" y="-8" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">YOUR STOP</text>
+    </g>
+
+    <!-- Moving School Bus on Map -->
+    <g transform="translate(140, 116)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.2))">
+      <circle cx="14" cy="14" r="18" fill="#1264E8" opacity="0.2"/>
+      <rect x="0" y="4" width="28" height="18" rx="3" fill="#F59E0B" stroke="#B45309"/>
+      <rect x="3" y="6" width="4" height="5" fill="#101D35"/>
+      <rect x="9" y="6" width="4" height="5" fill="#101D35"/>
+      <rect x="15" y="6" width="4" height="5" fill="#101D35"/>
+      <rect x="21" y="6" width="4" height="5" fill="#101D35"/>
+      <circle cx="6" cy="22" r="2.5" fill="#101D35"/>
+      <circle cx="22" cy="22" r="2.5" fill="#101D35"/>
+    </g>
+
+    <!-- Floating Live Radar Pill -->
+    <rect x="16" y="16" width="108" height="28" rx="14" fill="#101D35" opacity="0.9"/>
+    <circle cx="30" cy="30" r="4" fill="#12CBA5"/>
+    <text x="40" y="34" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">LIVE GPS</text>
+  </g>
+
+  <!-- Bottom Drawer: ETA & Bus Details Card -->
+  <g transform="translate(16, 396)">
+    <!-- Main Card Body -->
+    <rect width="328" height="224" rx="20" fill="#FFFFFF" stroke="#E2E8F0" filter="drop-shadow(0 4px 12px rgba(16,29,53,0.06))"/>
+
+    <!-- Pull Bar Indicator -->
+    <rect x="144" y="8" width="40" height="4" rx="2" fill="#CBD5E1"/>
+
+    <!-- Top ETA Row -->
+    <g transform="translate(20, 24)">
+      <text x="0" y="18" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" fill="#1264E8">Arriving in 6 min</text>
+      <text x="0" y="36" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#64748B">Expected at your stop by 08:20 AM</text>
+      
+      <rect x="230" y="4" width="58" height="24" rx="12" fill="#ECFDF5"/>
+      <text x="240" y="20" font-family="'Inter', sans-serif" font-size="10.5" font-weight="700" fill="#047857">ON TIME</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="20" y1="74" x2="308" y2="74" stroke="#F1F5F9" stroke-width="1.5"/>
+
+    <!-- Route Progress Bar -->
+    <g transform="translate(20, 88)">
+      <text x="0" y="10" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#101D35">Route 04: Morning Pickup</text>
+      <rect x="0" y="20" width="288" height="6" rx="3" fill="#E2E8F0"/>
+      <rect x="0" y="20" width="180" height="6" rx="3" fill="#1264E8"/>
+      <text x="0" y="38" font-family="'Inter', sans-serif" font-size="10" font-weight="500" fill="#64748B">Stop 4 of 8 • Next: Maple Oak Avenue</text>
+      <text x="242" y="38" font-family="'Inter', sans-serif" font-size="10" font-weight="700" fill="#1264E8">62% Done</text>
+    </g>
+
+    <!-- Driver Info Row -->
+    <g transform="translate(20, 148)">
+      <rect width="288" height="56" rx="12" fill="#F8FAFC" stroke="#E2E8F0"/>
+      <circle cx="28" cy="28" r="16" fill="#E2E8F0"/>
+      <text x="23" y="33" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#475569">RK</text>
+      
+      <text x="56" y="24" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#101D35">Ramesh Kumar</text>
+      <text x="56" y="38" font-family="'Inter', sans-serif" font-size="10.5" font-weight="500" fill="#64748B">Driver • Bus KA-01-F-4912</text>
+      
+      <!-- Call Button -->
+      <rect x="232" y="14" width="44" height="28" rx="8" fill="#EFF5FF" stroke="#BFDBFE"/>
+      <!-- Phone icon -->
+      <path d="M 250 23 C 251 22 252 23 253 24 L 254 26 C 255 27 255 28 254 29 C 253 30 252 31 251 32 C 253 34 255 36 257 37 C 258 36 259 35 260 34 C 261 33 262 33 263 34 L 265 35 C 266 36 267 37 266 38 Z" fill="#1264E8" transform="scale(0.8) translate(60, 4)"/>
+    </g>
+  </g>
+</svg>

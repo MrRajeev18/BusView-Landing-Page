@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640" fill="none" width="360" height="640">
+  <!-- Device Frame -->
+  <rect width="360" height="640" rx="36" fill="#0F172A"/>
+
+  <!-- Status Bar -->
+  <rect width="360" height="40" fill="#0F172A"/>
+  <text x="24" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">08:14</text>
+  <circle cx="330" cy="22" r="5" fill="#12CBA5"/>
+  <text x="260" y="26" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#94A3B8">GPS Locked</text>
+
+  <!-- Driver Header Header Bar -->
+  <g transform="translate(0, 40)">
+    <rect width="360" height="64" fill="#1E293B"/>
+    <text x="20" y="30" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">Driver Console</text>
+    <text x="20" y="48" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#94A3B8">Bus #04 • Route 4A Morning Run</text>
+
+    <!-- Driver Avatar -->
+    <circle cx="320" cy="32" r="16" fill="#1264E8"/>
+    <text x="312" y="36" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">RK</text>
+  </g>
+
+  <!-- Big Broadcast Status Card -->
+  <g transform="translate(16, 120)">
+    <rect width="328" height="96" rx="16" fill="#064E3B" stroke="#059669" stroke-width="2"/>
+    <circle cx="44" cy="48" r="22" fill="#10B981"/>
+    <!-- Transmission Waves -->
+    <circle cx="44" cy="48" r="14" fill="#064E3B"/>
+    <circle cx="44" cy="48" r="6" fill="#10B981"/>
+    
+    <text x="80" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">Location Sharing Active</text>
+    <text x="80" y="56" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#A7F3D0">Transmitting to School Admin &amp; Parents</text>
+    <text x="80" y="74" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#34D399">Signal: Strong (4G LTE) • Every 5s</text>
+  </g>
+
+  <!-- Next Stop Large Visibility Box -->
+  <g transform="translate(16, 232)">
+    <rect width="328" height="150" rx="16" fill="#1E293B" stroke="#334155"/>
+    <text x="20" y="30" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#94A3B8" letter-spacing="0.08em">NEXT SCHEDULED STOP</text>
+    <text x="20" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="800" fill="#FFFFFF">Maple Oak Avenue</text>
+    <text x="20" y="82" font-family="'Inter', sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">4 Students Expected for Pickup</text>
+
+    <!-- Students count pill -->
+    <g transform="translate(20, 100)">
+      <rect width="130" height="34" rx="8" fill="#334155"/>
+      <text x="12" y="22" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Stop 4 of 8</text>
+      
+      <rect x="142" y="0" width="146" height="34" rx="8" fill="#1264E8"/>
+      <text x="156" y="22" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Mark Departed &#10003;</text>
+    </g>
+  </g>
+
+  <!-- Upcoming Stops List -->
+  <g transform="translate(16, 398)">
+    <text x="4" y="16" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#94A3B8">REMAINING STOPS</text>
+    
+    <!-- Stop 5 -->
+    <g transform="translate(0, 28)">
+      <rect width="328" height="44" rx="10" fill="#1E293B"/>
+      <circle cx="24" cy="22" r="6" fill="#64748B"/>
+      <text x="44" y="26" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">Pinecrest Circle</text>
+      <text x="260" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#94A3B8">3 Students</text>
+    </g>
+
+    <!-- Stop 6 -->
+    <g transform="translate(0, 80)">
+      <rect width="328" height="44" rx="10" fill="#1E293B"/>
+      <circle cx="24" cy="22" r="6" fill="#64748B"/>
+      <text x="44" y="26" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#E2E8F0">Sunrise Gardens Gate</text>
+      <text x="260" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="500" fill="#94A3B8">6 Students</text>
+    </g>
+
+    <!-- School Stop Final -->
+    <g transform="translate(0, 132)">
+      <rect width="328" height="44" rx="10" fill="#1E293B"/>
+      <circle cx="24" cy="22" r="6" fill="#12CBA5"/>
+      <text x="44" y="26" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#12CBA5">Heritage Public Campus</text>
+      <text x="246" y="26" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#12CBA5">Destination</text>
+    </g>
+  </g>
+
+  <!-- Big End Trip Safe Button -->
+  <g transform="translate(16, 584)">
+    <rect width="328" height="42" rx="10" fill="#334155" stroke="#475569"/>
+    <text x="110" y="26" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#CBD5E1">Pause / End Trip</text>
+  </g>
+</svg>
