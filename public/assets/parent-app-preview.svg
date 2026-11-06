@@ -23,9 +23,10 @@
   <!-- In-App App Bar -->
   <g transform="translate(0, 44)">
     <rect width="360" height="60" fill="#101D35"/>
-    <text x="20" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="800" fill="#FFFFFF">BusView</text>
-    <circle cx="88" cy="27" r="3" fill="#12CBA5"/>
-    <text x="20" y="50" font-family="'Inter', sans-serif" font-size="11" font-weight="500" fill="#94A3B8">Greenwood High School • Bus 04</text>
+    <image href="/assets/busview-pin.png" x="16" y="16" width="22" height="22" preserveAspectRatio="xMidYMid meet" />
+    <text x="44" y="34" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="800" fill="#FFFFFF">BusView</text>
+    <circle cx="112" cy="27" r="3" fill="#12CBA5"/>
+    <text x="44" y="50" font-family="'Inter', sans-serif" font-size="10" font-weight="500" fill="#94A3B8">Greenwood High • Bus 04</text>
 
     <!-- Student Switcher Pill -->
     <rect x="236" y="14" width="104" height="32" rx="16" fill="#1E293B" stroke="#334155"/>

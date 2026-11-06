@@ -24,8 +24,7 @@
   
   <!-- Brand Logo inside sidebar -->
   <g transform="translate(18, 64)">
-    <circle cx="12" cy="12" r="12" fill="#1264E8"/>
-    <circle cx="12" cy="12" r="5" fill="#FFFFFF"/>
+    <image href="/assets/busview-pin.png" x="0" y="0" width="24" height="24" preserveAspectRatio="xMidYMid meet" />
     <text x="32" y="17" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">BusView</text>
     <text x="32" y="30" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#94A3B8">School Operations</text>
   </g>

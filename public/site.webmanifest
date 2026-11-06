@@ -1,0 +1,24 @@
+{
+  "name": "BusView - Smart School Transportation Platform",
+  "short_name": "BusView",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1264E8",
+  "background_color": "#FFFFFF",
+  "display": "standalone"
+}
