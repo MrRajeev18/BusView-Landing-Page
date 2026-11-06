@@ -1,7 +1,7 @@
 /**
  * BusView - Smart School Transportation Platform
  * Client-Side Application Script
- * Company: Seniorbit OPC Private Limited
+ * Company: Synerbit OPC Private Limited
  */
 
 document.addEventListener('DOMContentLoaded', () => {

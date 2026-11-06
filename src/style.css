@@ -1,7 +1,7 @@
 /* ==========================================================================
    BusView - Smart School Transportation Platform
    Design System & Core Stylesheet
-   Company: Seniorbit OPC Private Limited
+   Company: Synerbit OPC Private Limited
    ========================================================================== */
 
 :root {
@@ -1106,7 +1106,7 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   Section 9: About Seniorbit & BusView
+   Section 9: About Synerbit & BusView
    ========================================================================== */
 .about-section {
   background: var(--color-white);

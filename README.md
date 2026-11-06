@@ -1,7 +1,7 @@
 # BusView — Smart School Transportation Platform
 
 > **"Every Journey, Within Your View."**  
-> Developed & Operated by **Seniorbit OPC Private Limited**
+> Developed & Operated by **Synerbit OPC Private Limited**
 
 BusView is a modern, reliable SaaS platform designed to make school transportation transparent, manageable, and convenient for schools and parents.
 
@@ -38,7 +38,7 @@ BusView connects three key stakeholders into a unified digital experience:
 | **For Parents** | `for-parents.html` | Parent experience page highlighting roadside wait elimination, live route progression, and student peace of mind. |
 | **Features** | `features.html` | Complete breakdown of core capabilities (Live Tracking, ETA, Parent UI, School Dashboard, Driver Broadcast) + clearly labeled Planned Innovations roadmap. |
 | **How It Works** | `how-it-works.html` | 3-Step implementation walkthrough (School Setup &rarr; Location Sharing &rarr; Connected Visibility). |
-| **About Us** | `about.html` | Introduction to Seniorbit OPC Private Limited, company mission, and technology principles. |
+| **About Us** | `about.html` | Introduction to Synerbit OPC Private Limited, company mission, and technology principles. |
 | **Free Pilot** | `pilot.html` | Dedicated institutional pilot enrollment page with eligibility terms and application form. |
 | **Privacy Policy** | `privacy.html` | Institutional data protection policy, role-based location access, and student privacy governance. |
 | **Terms** | `terms.html` | Terms of service, driver road safety guidelines, and pilot commitments. |
@@ -78,5 +78,5 @@ npm run preview
 
 ## 📄 Corporate Attribution
 
-**BusView** is a proprietary software platform developed by **Seniorbit OPC Private Limited**.  
-Copyright &copy; 2026 Seniorbit OPC Private Limited. All rights reserved.
+**BusView** is a proprietary software platform developed by **Synerbit OPC Private Limited**.  
+Copyright &copy; 2026 Synerbit OPC Private Limited. All rights reserved.

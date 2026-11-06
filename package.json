@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "BusView - Smart School Transportation Platform by Seniorbit OPC Private Limited",
+  "description": "BusView - Smart School Transportation Platform by Synerbit OPC Private Limited",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
