@@ -42,24 +42,75 @@ function initMobileNavigation() {
   const drawer = document.querySelector('.mobile-drawer');
   if (!toggleBtn || !drawer) return;
 
-  toggleBtn.addEventListener('click', () => {
+  // Create backdrop if not present
+  let backdrop = document.querySelector('.mobile-backdrop');
+  if (!backdrop) {
+    backdrop = document.createElement('div');
+    backdrop.className = 'mobile-backdrop';
+    document.body.appendChild(backdrop);
+  }
+
+  function openMenu() {
+    drawer.classList.add('open');
+    backdrop.classList.add('open');
+    toggleBtn.classList.add('is-active');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('mobile-nav-locked');
+    toggleBtn.innerHTML = `
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    `;
+  }
+
+  function closeMenu() {
+    drawer.classList.remove('open');
+    backdrop.classList.remove('open');
+    toggleBtn.classList.remove('is-active');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('mobile-nav-locked');
+    toggleBtn.innerHTML = `
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    `;
+  }
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     const isOpen = drawer.classList.contains('open');
     if (isOpen) {
-      drawer.classList.remove('open');
-      toggleBtn.setAttribute('aria-expanded', 'false');
+      closeMenu();
     } else {
-      drawer.classList.add('open');
-      toggleBtn.setAttribute('aria-expanded', 'true');
+      openMenu();
     }
   });
 
-  // Close when clicking nav link
-  drawer.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      drawer.classList.remove('open');
-      toggleBtn.setAttribute('aria-expanded', 'false');
+  backdrop.addEventListener('click', closeMenu);
+
+  // Close when clicking nav link or button inside drawer
+  drawer.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('click', () => {
+      closeMenu();
     });
   });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer.classList.contains('open')) {
+      closeMenu();
+    }
+  });
+
+  // Auto-close on resize to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && drawer.classList.contains('open')) {
+      closeMenu();
+    }
+  }, { passive: true });
 }
 
 /* ==========================================================================
@@ -174,8 +225,15 @@ function initShowcaseTabs() {
       const targetId = tab.getAttribute('data-target');
 
       // Update active tab buttons
-      tabs.forEach(t => t.classList.remove('active'));
+      tabs.forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
       tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+
+      // Scroll tab into view horizontally on mobile
+      tab.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
 
       // Switch panels
       panels.forEach(p => {

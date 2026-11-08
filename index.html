@@ -144,7 +144,7 @@
                 SMART SCHOOL TRANSPORTATION PLATFORM
               </span>
               <h1 class="heading-xl">
-                Every School Journey, <br/>
+                Every School Journey, <br class="desktop-only"/>
                 <span style="color: var(--color-primary);">Within Your View.</span>
               </h1>
             </div>
@@ -298,15 +298,17 @@
               </div>
 
               <!-- Interactive Demo Controls -->
-              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 16px; font-size: 13px; color: var(--color-text-muted);">
-                <button id="heroPauseBtn" class="btn btn-secondary btn-sm" style="padding: 4px 10px; font-size: 12px;">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
-                  Pause Tracking
-                </button>
-                <button id="heroSwitchBusBtn" class="btn btn-secondary btn-sm" style="padding: 4px 10px; font-size: 12px;">
-                  Showing: Bus #04 (Morning Run)
-                </button>
-                <span>Live GPS Feed Simulation</span>
+              <div class="hero-sim-controls">
+                <div class="hero-sim-controls-buttons">
+                  <button id="heroPauseBtn" class="btn btn-secondary btn-sm" style="padding: 4px 10px; font-size: 12px;">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+                    Pause Tracking
+                  </button>
+                  <button id="heroSwitchBusBtn" class="btn btn-secondary btn-sm" style="padding: 4px 10px; font-size: 12px;">
+                    Showing: Bus #04 (Morning Run)
+                  </button>
+                </div>
+                <span class="hero-sim-status-label">Live GPS Feed Simulation</span>
               </div>
             </div>
           </div>
@@ -841,7 +843,7 @@
         <div class="showcase-container">
           <!-- Panel 1: Parent Mobile App -->
           <div id="tab-parents" class="showcase-tab-panel active" role="tabpanel">
-            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: center;">
+            <div class="showcase-panel-grid">
               <div>
                 <span class="stakeholder-tag tag-parent">PARENT APPLICATION</span>
                 <h3 class="heading-lg" style="color: var(--color-white); margin-top: 12px;">Clear, Real-Time Visibility for Parents</h3>
@@ -911,7 +913,7 @@
 
           <!-- Panel 3: Driver Interface -->
           <div id="tab-drivers" class="showcase-tab-panel" role="tabpanel">
-            <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: center;">
+            <div class="showcase-panel-grid">
               <div>
                 <span class="stakeholder-tag tag-driver">DRIVER CONSOLE</span>
                 <h3 class="heading-lg" style="color: var(--color-white); margin-top: 12px;">Purposefully Simple for Drivers</h3>
