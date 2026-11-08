@@ -180,7 +180,18 @@
       <button class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
       <h2 class="heading-md">School Enquiry &amp; Demo</h2>
       <p class="body-sm" style="margin-bottom: 20px;">We'll coordinate with your school administration.</p>
-      <form class="enquiry-form" novalidate>
+      
+      <div class="form-success-banner" role="alert">
+        <h3 class="heading-md" style="color: #065F46;">Enquiry Submitted Successfully</h3>
+        <p class="body-md" style="color: #047857; margin-top: 6px;">
+          Reference ID: <strong class="reference-id">BV-849201</strong>. Dispatched to <strong>contact@busview.in</strong>. Our transport specialist will contact your administration shortly.
+        </p>
+      </div>
+
+      <form class="enquiry-form" action="https://formsubmit.co/contact@busview.in" method="POST" novalidate>
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_subject" value="New How-It-Works Enquiry - BusView Platform" />
         <div class="form-group">
           <label class="form-label" for="hwSchool">School Name *</label>
           <input type="text" id="hwSchool" name="schoolName" class="form-input" placeholder="School Name" required />
