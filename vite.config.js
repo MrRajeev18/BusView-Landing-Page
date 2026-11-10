@@ -7,7 +7,7 @@ function cleanUrlsPlugin() {
     name: 'clean-urls-generator',
     closeBundle() {
       const distDir = resolve(__dirname, 'dist');
-      const pages = ['for-schools', 'for-parents', 'features', 'how-it-works', 'about', 'pilot', 'privacy', 'terms'];
+      const pages = ['for-schools', 'for-parents', 'features', 'how-it-works', 'about', 'pilot', 'privacy', 'terms', 'contact'];
 
       pages.forEach((page) => {
         const srcFile = resolve(distDir, `${page}.html`);
@@ -38,7 +38,8 @@ export default defineConfig({
         about: resolve(__dirname, 'about.html'),
         pilot: resolve(__dirname, 'pilot.html'),
         privacy: resolve(__dirname, 'privacy.html'),
-        terms: resolve(__dirname, 'terms.html')
+        terms: resolve(__dirname, 'terms.html'),
+        contact: resolve(__dirname, 'contact.html')
       }
     }
   }
